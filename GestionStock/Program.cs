@@ -59,12 +59,14 @@ namespace GestionStock
                 }
 
 
-                foreach (Article article in arts)
-                {
-                    Console.WriteLine($"{article.Nom} - Prix total :{article.Prix * article.Qte}");
-                }
+
                 //string escapeStr = @"";
                 //string interpolNEscape = $@"{art.Nom}";
+            }
+
+            foreach (Article article in arts)
+            {
+                Console.WriteLine($"{article.Nom} - Prix total :{article.Prix * article.Qte}");
             }
         }
     }

@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbreBinaire", "ArbreBinair
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{A26CBA89-5505-40F4-9B7C-29BF0C30236B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegue", "Delegue\Delegue.csproj", "{B563A8EF-5E67-42B8-B00E-3837A736FF88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{A26CBA89-5505-40F4-9B7C-29BF0C30236B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26CBA89-5505-40F4-9B7C-29BF0C30236B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26CBA89-5505-40F4-9B7C-29BF0C30236B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B563A8EF-5E67-42B8-B00E-3837A736FF88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B563A8EF-5E67-42B8-B00E-3837A736FF88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B563A8EF-5E67-42B8-B00E-3837A736FF88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B563A8EF-5E67-42B8-B00E-3837A736FF88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

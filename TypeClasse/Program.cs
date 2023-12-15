@@ -8,7 +8,6 @@ namespace TypeClasse
         {
             MaClasse maclass = new MaClasse();
 
-            maclass.
 
             Console.WriteLine("Hello World!");
         }
