@@ -10,10 +10,31 @@ namespace MonEcole.BL
 {
     class EleveService
     {
-        public void Inscrire(Eleve eleve )
+        public void Create(Eleve eleve )
         {
-            var dbctx = new EcoleDbContext();
+            using var dbctx = new EcoleDbContext();
             dbctx.Add(eleve);
+            dbctx.SaveChanges();
+        }
+
+        public void Update(Eleve eleve)
+        {
+            using var dbctx = new EcoleDbContext();
+            dbctx.Update(eleve);
+            dbctx.SaveChanges();
+        }
+
+        public Eleve GetById(int id)
+        {
+            using var dbctx = new EcoleDbContext();
+            return dbctx.Eleves.Find(id);
+        }
+
+        public void Delete(int id)
+        {
+            using var dbctx = new EcoleDbContext();
+            var eleve = dbctx.Eleves.Find(id);
+            dbctx.Eleves.Remove(eleve);
             dbctx.SaveChanges();
         }
     }
