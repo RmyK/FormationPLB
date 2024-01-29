@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MonEcole.BL
 {
-    class EleveService
+    public class EleveService
     {
         public void Create(Eleve eleve )
         {
@@ -28,6 +28,12 @@ namespace MonEcole.BL
         {
             using var dbctx = new EcoleDbContext();
             return dbctx.Eleves.Find(id);
+        }
+
+        public List<Eleve> GetAll()
+        {
+            using var dbctx = new EcoleDbContext();
+            return dbctx.Eleves.ToList();
         }
 
         public void Delete(int id)

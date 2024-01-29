@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MonEcole.DAL.DataAccess;
 using MonEcole.DAL.DataModels;
 
 namespace MonEcole.BL
 {
     public class EcoleService
     {
+        public string GetEcoleName()
+        {
+            using var ctx = new EcoleDbContext();
+            return ctx.Ecoles.FirstOrDefault()?.Nom ?? "Pas d'école enregistrée";
+        }
+
         private Ecole monEcole;
 
         public void Embaucher(ISalarie salarie)
