@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Linq
 {
@@ -13,7 +14,7 @@ namespace Linq
             var artNombreux = GetArticleCondition(arts, (Article a)=> (a.Quantite>=100));
             var artNombreux2 = GetIfCondition(arts, (Article a) => (a.Quantite >= 100));
             var artNombreux3 = arts.GetIfCondition((Article a) => (a.Quantite >= 100));
-
+            arts.Where(a => a.Quantite >= 100);
         }
 
         public List<Article> GetArticleCher(List<Article> articles)

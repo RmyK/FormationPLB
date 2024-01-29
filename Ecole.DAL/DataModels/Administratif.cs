@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MonEcole.DAL.DataModels
 {
-    [Table("Administratifs")]
+    //[Table("Administratifs")]
     public class Administratif : Personne, ISalarie
     {
         public int? FonctionId { get; set; }

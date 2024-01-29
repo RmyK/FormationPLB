@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MonEcole.DAL.DataModels
 {
-    [Table("Eleves")]
+    //[Table("Eleves")]
     public class Eleve : Personne
     {
         public int Moyenne { get; set; }

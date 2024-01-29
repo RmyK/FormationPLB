@@ -10,6 +10,7 @@ namespace MonEcole.DAL.DataModels
 {
     public abstract class Personne
     {
+        [Key]
         public int Id { get; set; }
         [MaxLength(100)]
         [Required]
