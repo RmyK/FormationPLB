@@ -1,0 +1,29 @@
+﻿@using MonEcole.DAL.DataModels
+
+<div class="d-flex flex-column">
+    <div class="d-flex flex-row">
+        <div>Prénom :</div>
+        <div>@MonEleve.Prenom</div>
+    </div>
+    <div class="d-flex flex-row">
+        <div>Nom :</div>
+        <div>@MonEleve.Nom</div>
+    </div>
+    <div class="d-flex flex-row">
+        <div>Age :</div>
+        <div>@MonEleve.Age</div>
+    </div>
+    <div class="d-flex flex-row">
+        <div>Date de naissance :</div>
+        <div>@MonEleve.DateNaissance.ToShortDateString()</div>
+    </div>
+    <div class="d-flex flex-row">
+        <div>Moyenne :</div>
+        <div>@MonEleve.Moyenne</div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Eleve MonEleve { get; set; }
+}

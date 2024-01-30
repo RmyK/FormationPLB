@@ -1,0 +1,16 @@
+﻿@page "/listEleve"
+
+
+<div>
+    @if (MesEleves == null)
+    {
+        <span>Liste en cours de chargement ...</span>
+    }
+    else
+    {
+        @foreach (var eleve in MesEleves)
+        {
+            <DetailListEleve MonEleve="@eleve"></DetailListEleve>
+        }
+    }
+</div>
