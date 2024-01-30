@@ -1,4 +1,5 @@
-﻿using MonEcole.DAL.DataAccess;
+﻿using MonEcole.BL.Interfaces;
+using MonEcole.DAL.DataAccess;
 using MonEcole.DAL.DataModels;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MonEcole.BL
 {
-    public class EleveService
+    public class EleveService : IEleveService
     {
         public void Create(Eleve eleve )
         {
