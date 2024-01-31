@@ -1,0 +1,26 @@
+﻿@if (IsEdit)
+{
+    <div class="d-flex flex-row">
+        <div>Prénom :</div>
+        <input type="text" @bind-value="@Eleve.Prenom" />
+    </div>
+    <div class="d-flex flex-row">
+        <div>Nom :</div>
+        <input type="text" @bind-value="@Eleve.Nom" />
+    </div>
+    <button @onclick="Cancel">Annuler</button>
+}
+
+
+@code {
+    [Parameter]
+    public EleveViewModel Eleve { get; set; }
+
+    [Parameter]
+    public bool IsEdit { get; set; }
+
+    public void Cancel()
+    {
+        IsEdit = false;
+    }
+}

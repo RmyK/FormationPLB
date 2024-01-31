@@ -8,7 +8,7 @@
     }
     else
     {
-        @foreach (var eleve in MesEleves)
+        @foreach (var eleve in MesEleves.Select(e=> new EleveViewModel(e)).ToList())
         {
             <DetailListEleve MonEleve="@eleve"></DetailListEleve>
         }

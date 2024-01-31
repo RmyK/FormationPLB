@@ -39,15 +39,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegue", "Delegue\Delegue.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleWPF", "EcoleWPF\EcoleWPF.csproj", "{D6F977F8-5DC7-4B77-A09A-B8F8B76775E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoleMVC", "EcoleMVC\EcoleMVC.csproj", "{E09578ED-3EF3-475D-ABA4-C92A515D4162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleMVC", "EcoleMVC\EcoleMVC.csproj", "{E09578ED-3EF3-475D-ABA4-C92A515D4162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoleWASM.Server", "EcoleWASM\Server\EcoleWASM.Server.csproj", "{FADDF7E8-EE66-4F8A-8F54-A4A4DF3F3BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleWASM.Server", "EcoleWASM\Server\EcoleWASM.Server.csproj", "{FADDF7E8-EE66-4F8A-8F54-A4A4DF3F3BB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoleWASM.Client", "EcoleWASM\Client\EcoleWASM.Client.csproj", "{3F9845AE-57B5-4459-A644-2B9A22061F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleWASM.Client", "EcoleWASM\Client\EcoleWASM.Client.csproj", "{3F9845AE-57B5-4459-A644-2B9A22061F8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoleWASM.Shared", "EcoleWASM\Shared\EcoleWASM.Shared.csproj", "{03A447EB-49C1-4DF7-A6AF-BE3C97213C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleWASM.Shared", "EcoleWASM\Shared\EcoleWASM.Shared.csproj", "{03A447EB-49C1-4DF7-A6AF-BE3C97213C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoleServer", "EcoleServer\EcoleServer.csproj", "{AABB1B8B-C4DB-459F-BAF5-F99D106B2CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoleServer", "EcoleServer\EcoleServer.csproj", "{AABB1B8B-C4DB-459F-BAF5-F99D106B2CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Parallel", "Async_Parallel\Async_Parallel.csproj", "{53DB4EB4-C506-446B-98BC-86D146952D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{AABB1B8B-C4DB-459F-BAF5-F99D106B2CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABB1B8B-C4DB-459F-BAF5-F99D106B2CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABB1B8B-C4DB-459F-BAF5-F99D106B2CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DB4EB4-C506-446B-98BC-86D146952D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DB4EB4-C506-446B-98BC-86D146952D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DB4EB4-C506-446B-98BC-86D146952D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DB4EB4-C506-446B-98BC-86D146952D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

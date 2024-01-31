@@ -1,0 +1,50 @@
+﻿@page "/editerEleve/{EleveId:int}"
+
+@inject MonEcole.BL.EleveService eleveSrv
+
+<h3>EditEleve</h3>
+
+<div>
+    @if (eleve == null)
+    {
+        <span>
+            Chargement en cours
+        </span>
+    }
+    else
+    {
+        <EditForm Model="eleve">
+
+            <div class="d-flex flex-row">
+                <div>Prénom :</div>
+                <InputText Value="@eleve.Prenom"></InputText>
+            </div>
+            <div class="d-flex flex-row">
+                <div>Nom :</div>
+                <InputText Value="@eleve.Nom"></InputText>
+            </div>
+            <div class="d-flex flex-row">
+                <div>Date de naissance :</div>
+                <InputDate Value="@eleve.DateNaissance"></InputDate>
+            </div>
+            <div class="d-flex flex-row">
+                <div>Moyenne :</div>
+                <InputNumber Value="@eleve.Moyenne"></InputNumber>
+            </div>
+        </EditForm>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int EleveId { get; set; }
+
+    private MonEcole.DAL.DataModels.Eleve eleve { get; set; }
+
+    protected override Task OnParametersSetAsync()
+    {
+        eleve = eleveSrv.GetById(EleveId);
+
+        return base.OnParametersSetAsync();
+    }
+}

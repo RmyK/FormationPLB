@@ -1,4 +1,5 @@
 ﻿@using MonEcole.DAL.DataModels
+@inject NavigationManager navManager
 
 <div class="d-flex flex-column">
     <div class="d-flex flex-row">
@@ -21,9 +22,27 @@
         <div>Moyenne :</div>
         <div>@MonEleve.Moyenne</div>
     </div>
+    @*<button @onclick="EditerEleve">Editer</button>*@
+    <button @onclick="EditerEleve2">Editer</button>
+
+    <EditComponent IsEdit="@isedit" Eleve="@(MonEleve with { })"></EditComponent>
 </div>
+
 
 @code {
     [Parameter]
-    public Eleve MonEleve { get; set; }
+    public EleveViewModel MonEleve { get; set; }
+
+    public void EditerEleve()
+    {
+        navManager.NavigateTo($"/editerEleve/{MonEleve.Id}");
+    }
+
+    private bool isedit = false;
+
+    public void EditerEleve2()
+    {
+        isedit = !isedit;
+    }
+
 }
